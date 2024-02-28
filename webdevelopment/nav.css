@@ -4,3 +4,30 @@ nav li{
     border: 1px solid;
     display: inline-block;
 }
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu li{
+    margin: 5px 0;
+}
