@@ -9,6 +9,24 @@ p::first-letter {
 
 p {
     text-indent: 3em;
-    padding: 20px;
+    padding: 0px;
     margin: 1 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px;
+}
+
+.about,
+.interests,
+.education{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lightblue;
 }
