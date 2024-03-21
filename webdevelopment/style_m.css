@@ -1,0 +1,70 @@
+h1 {
+    color: #3abcff;
+}
+
+p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+p {
+    text-indent: 3em;
+    padding: 0px;
+    margin: 1 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px;
+}
+
+.about,
+.interests,
+.education{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+
+@media screen and (max-width: 759px){
+
+    h1{
+        font-size: 1.5rem;
+        color: lightcoral;
+    }
+    p{
+        text-indent: 0;
+        margin: 10px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .about,
+    .interests,
+    .education{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lightcoral;
+    }
+    .burger{
+        display:none;
+    }
+    .buger div{
+        width: 25px;
+        height: 2px;
+        margin: 5px;
+        border-radius: 25%;
+    }
+    
+}
