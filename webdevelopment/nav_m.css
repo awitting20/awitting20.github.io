@@ -52,7 +52,7 @@ nav ul, nav:active ul{
 
 nav:hover ul{
     display: inline-block;
-    background-color: #560183;
+    background-color: lightblue;
     padding: 5px;
     border-right: 0px;
 }
