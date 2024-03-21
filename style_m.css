@@ -1,0 +1,130 @@
+h1 {
+    color: #3abcff;
+}
+
+p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+p {
+    text-indent: 3em;
+    padding: 0px;
+    margin: 1 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px;
+}
+
+.about,
+.interests,
+.education{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+/*Desktop*/
+@media screen and (min-width: 760px){
+    h1{
+        font-size: 1.5rem;
+        color: lightcoral;
+    }
+    p{
+        text-indent: 0;
+        margin: 10px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3";
+    }
+
+    .item1{
+        grid-area: item1;
+        justify-self: center;
+        padding-left: 10px;
+    }
+
+    .item2{
+        grid-area: item2;
+        padding-left: 10px;
+    }
+
+    .item3{
+        grid-area: item3;
+        padding-left: 10px;
+    }
+
+    .about,
+    .interests,
+    .education{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lightcoral;
+    }
+    .burger{
+        display:none;
+    }
+    .buger div{
+        width: 25px;
+        height: 2px;
+        margin: 5px;
+        border-radius: 25%;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 759px){
+
+    .grid{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item1 item 2"
+        "item2 item 2"
+        "item3 item 3";
+    }
+
+    .item1{
+        grid-area: item1;
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    .item2{
+        grid-area: item2;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .item3{
+        grid-area: item2;
+        justify-self: left;
+        padding-left: 10px;
+    }
+}
