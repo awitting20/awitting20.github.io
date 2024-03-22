@@ -1,6 +1,65 @@
+.active{
+    background-color: aquamarine;
+    color: black
+}
 
 
-nav li{
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+nav ul{
+    float:left;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav a:hover{
+    background-color: bisque;
+}
+
+nav ul li a{
+    display: block;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding: 0px 10px 10px 15px;
+    text-decoration: none;
+}
+
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: rgb(128, 0, 90);
+    padding: 10px; 
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+    
+}
+
+nav ul li ul li {
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;      
+}
+nav ul li ul li a {
+    padding: 0px 12px;
+}
+
+nav ul li ul li a:hover {
+    background-color: black;
+}
+
+/*nav li{
     margin: 5px 0;
     padding: 10px;
     border: 1px solid;
@@ -33,14 +92,10 @@ nav ul{
 .dropdown-menu li{
     margin: 5px 0;
 }
+*/
 
 
 
-
-nav ul{
-    display: none;
-    list-style: none;
-}
 
 nav ul.active{
     display: flex;
@@ -73,7 +128,6 @@ nav ul li{
 
 
 
-
 @media only screen and (max-width: 640px){
 
 
@@ -81,6 +135,8 @@ nav ul li{
     display: inline-block;
     padding-left: 20px;
     width: 26px;
+    float:left;
+    font-size: 2em;
 }
 
 nav ul, nav:active ul {
@@ -92,7 +148,7 @@ nav ul, nav:active ul {
 
 nav:hover ul {
     display: inline-block;
-    float: left;
+    float:left;
     background-color: lightslategray;
     padding: 5px;
     border-right: 0px;
@@ -130,4 +186,4 @@ nav ul li ul {
         
     }
     
-    }
+}

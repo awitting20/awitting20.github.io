@@ -54,7 +54,8 @@ main{
         grid-template-areas: 
         "item1"
         "item2"
-        "item3";
+        "item3"
+        "item4";
     }
 
     .item1{
@@ -73,6 +74,12 @@ main{
         padding-left: 10px;
     }
 
+    .item4{
+        grid: item4;
+        justify-self: left;
+        padding-left: 25px;
+    }
+
     .about,
     .interests,
     .education{
@@ -83,15 +90,8 @@ main{
         border-radius: 5px;
         background-color: lightcoral;
     }
-    .burger{
-        display:none;
-    }
-    .buger div{
-        width: 25px;
-        height: 2px;
-        margin: 5px;
-        border-radius: 25%;
-    }
+
+
 }
 
 /*Mobile*/
@@ -102,10 +102,6 @@ main{
         grid-gap: 1em;
         grid-template-columns: 20% 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "item1 item 2"
-        "item2 item 2"
-        "item3 item 3";
     }
 
     .item1{
@@ -123,8 +119,25 @@ main{
     }
 
     .item3{
-        grid-area: item2;
+        grid-area: item3;
         justify-self: left;
         padding-left: 10px;
+    }
+
+    .item4{
+        grid: item4;
+        justify-self: left;
+        padding-left: 215px;
+    }
+
+
+    .burger{
+        display:none;
+    }
+    .buger div{
+        width: 25px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 25%;
     }
 }
