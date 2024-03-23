@@ -9,15 +9,34 @@
     Use: Homepage of Website
     Author: Aaron Wttting
     School/Term: University of Missouri/Graduating Senior
-    Developed: 02/07/24
-    Tested: 02/07/24
+    Developed: 03/06/24
+    Tested: 03/06/24
     -->
 
     <meta charset="utf-8">
     <title>Project</title>
 
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
 </head>
 
 <body>
@@ -37,20 +56,6 @@
     </p>
     <blockquote>Success is falling nine times and getting up ten - Jon Bon Jovi</blockquote>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="dropdown">
-                <a href="#">Projects</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
 
 </body>
 
