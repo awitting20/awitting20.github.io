@@ -36,9 +36,15 @@ body {
 }
 
 @media print {
-    h1, p, ul, ol, blockquote, footer {
+    h1, p, ul, ol, footer {
         color: black;
         font-family: 'Lexend', serif;
+    }
+    blockquote{
+        @font-face {
+            font-family: serif;
+            src: url(sansation_light.woff);
+        }
     }
     body {
         margin: 1in;
