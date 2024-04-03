@@ -35,6 +35,16 @@ body {
     font-family: 'Lexend', serif;
 }
 
+.icon{
+    width: 30px;
+    height: auto;
+}
+
+footer {
+    background-image: url('Images/abstract-blur-empty-green-gradient-studio-well-use-as-background-website-template-frame-business-report.jpg');
+    background-size: cover;
+}
+
 @media print {
     h1, p, ul, ol, footer {
         color: black;
