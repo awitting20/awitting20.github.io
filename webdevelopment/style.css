@@ -40,6 +40,11 @@ body {
     height: auto;
 }
 
+.icon:hover{
+    transform: scale(1.25);
+    transition: transform 0.7s ease;
+}
+
 footer {
     background-image: url('Images/abstract-blur-empty-green-gradient-studio-well-use-as-background-website-template-frame-business-report.jpg');
     background-size: cover;
