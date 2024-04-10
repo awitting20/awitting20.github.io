@@ -20,9 +20,19 @@ main{
     padding: 5px;
 }
 
+.homeMain{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lightgoldenrodyellow;
+}
+
 .about,
 .interests,
-.education{
+.education,
+.resume{
     width: 80%;
     margin-bottom: 20px;
     padding: 20px;
@@ -31,8 +41,33 @@ main{
     background-color: lightblue;
 }
 
+.abroad,
+.itjob,
+.intern,
+.overall{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lightcoral;
+    }
+
+.abroadr,
+.itjobr,
+.internr,
+.overallr{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lavender;
+    }    
+
 body {
     font-family: 'Lexend', serif;
+    background-color: lightgrey;
 }
 
 .icon{
@@ -124,7 +159,8 @@ footer {
 
     .about,
     .interests,
-    .education{
+    .education,
+    .resume{
         width: 100%;
         padding: 10px;
         margin-bottom: 10px;
@@ -133,8 +169,40 @@ footer {
         background-color: lightcoral;
     }
 
+    .abroad,
+    .itjob,
+    .intern,
+    .overall{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: lightblue
+        }
 
+    .abroadr,
+    .itjobr,
+    .internr,
+    .overallr{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lavender;
+    } 
+
+    .homeMain{
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border:1px solid;
+        border-radius: 5px;
+        background-color: lightgoldenrodyellow;
+    }
 }
+
 
 /*Mobile*/
 @media screen and (max-width: 759px){
