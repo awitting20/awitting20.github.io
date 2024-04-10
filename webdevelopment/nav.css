@@ -153,6 +153,23 @@
     nav ul li ul {       
          display:none; 
             
-        }
+    }
+
+    .dropdown{
+        position: relative;
+    }
+        
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 4px;
+    }
+        
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
         
     }
