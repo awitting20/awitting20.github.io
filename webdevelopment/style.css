@@ -85,6 +85,10 @@ footer {
     background-size: cover;
 }
 
+
+
+
+
 @media print {
     h1, p, ul, ol, footer {
         color: black;
@@ -201,6 +205,38 @@ footer {
         border-radius: 5px;
         background-color: lightgoldenrodyellow;
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #000;
+      }
+      
+      caption {
+        caption-side: top;
+        font-weight: bold;
+      }
+      
+      thead {
+        background-color: black;
+      }
+      
+      tfoot {
+        background-color: white;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: lavender;
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: teal;
+      }
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid #000;
+      }
 }
 
 
@@ -250,4 +286,41 @@ footer {
         margin: 5px;
         border-radius: 25%;
     }
+
+    th, td {
+        font-size: 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #000;
+      }
+      
+      caption {
+        caption-side: top;
+        font-weight: bold;
+      }
+      
+      thead {
+        background-color: black;
+      }
+      
+      tfoot {
+        background-color: white;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: teal;
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: lavender;
+      }
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid #000;
+      }
+
 }
