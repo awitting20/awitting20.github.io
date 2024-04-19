@@ -26,7 +26,7 @@ main{
     padding: 20px;
     border:1px solid;
     border-radius: 5px;
-    background-color: lightgoldenrodyellow;
+    background-color: lavender;
 }
 
 .about,
@@ -38,7 +38,7 @@ main{
     padding: 20px;
     border:1px solid;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: lavender;
 }
 
 .abroad,
@@ -50,7 +50,7 @@ main{
         margin-bottom: 10px;
         border: 1px solid;
         border-radius: 5px;
-        background-color: lightcoral;
+        background-color: lavender;
     }
 
 .abroadr,
@@ -108,8 +108,8 @@ footer {
 /*Desktop*/
 @media screen and (min-width: 760px){
     h1{
-        font-size: 1.5rem;
-        color: lightcoral;
+        font-size: 2rem;
+        color: rgb(169, 55, 55);
     }
     p{
         text-indent: 0;
@@ -170,7 +170,7 @@ footer {
         margin-bottom: 10px;
         border: 1px solid;
         border-radius: 5px;
-        background-color: lightcoral;
+        background-color: lightblue;
     }
 
     .abroad,
@@ -194,7 +194,7 @@ footer {
         margin-bottom: 10px;
         border: 1px solid;
         border-radius: 5px;
-        background-color: lavender;
+        background-color: lightblue;
     } 
 
     .homeMain{
@@ -203,13 +203,13 @@ footer {
         padding: 20px;
         border:1px solid;
         border-radius: 5px;
-        background-color: lightgoldenrodyellow;
+        background-color: lightblue;
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
-        border: 2px solid #000;
+        border: 2px solid black;
       }
       
       caption {
@@ -235,8 +235,53 @@ footer {
       
       th, td {
         padding: 8px;
-        border: 1px solid #000;
+        border: 1px solid black;
       }
+
+
+
+      .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: lightblue;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group textarea {
+        height: 100px;
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: blue;
+      }
+      .form-group button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: blue;
+      }
+
+      
 }
 
 
@@ -321,6 +366,48 @@ footer {
       th, td {
         padding: 8px;
         border: 1px solid #000;
+      }
+
+
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: lavender;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group textarea {
+        height: 100px;
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: blue;
+      }
+      .form-group button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #0056b3;
       }
 
 }
