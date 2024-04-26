@@ -10,7 +10,7 @@ p::first-letter {
 p {
     text-indent: 3em;
     padding: 0px;
-    margin: 1 auto;
+    margin: 1px auto;
 }
 
 main{
@@ -105,7 +105,7 @@ footer {
     }
 }
 
-/*Desktop*/
+
 @media screen and (min-width: 760px){
     h1{
         font-size: 2rem;
@@ -149,7 +149,6 @@ footer {
     }
 
     .item4{
-        grid: item4;
         justify-self: left;
         padding-left: 25px;
     }
@@ -218,7 +217,7 @@ footer {
       }
       
       thead {
-        background-color: black;
+        background-color: darkgray;
       }
       
       tfoot {
@@ -316,7 +315,6 @@ footer {
     }
 
     .item4{
-        grid: item4;
         justify-self: left;
         padding-left: 215px;
     }

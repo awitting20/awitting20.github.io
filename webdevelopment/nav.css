@@ -163,10 +163,10 @@
         margin-bottom: 2px;
     }
     
-    nav ul li ul {       
-         display:none; 
-            
-    }
+    nav ul li ul li {       
+        display:none; 
+           
+   }
 
     .dropdown{
         position: relative;
