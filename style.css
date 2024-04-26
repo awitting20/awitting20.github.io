@@ -1,0 +1,411 @@
+h1 {
+    color: #3abcff;
+}
+
+p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+p {
+    text-indent: 3em;
+    padding: 0px;
+    margin: 1px auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px;
+}
+
+.homeMain{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lavender;
+}
+
+.about,
+.interests,
+.education,
+.resume{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 5px;
+    background-color: lavender;
+}
+
+.abroad,
+.itjob,
+.intern,
+.overall{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lavender;
+    }
+
+.abroadr,
+.itjobr,
+.internr,
+.overallr{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lavender;
+    }    
+
+body {
+    font-family: 'Lexend', serif;
+    background-color: lightgrey;
+}
+
+.icon{
+    width: 30px;
+    height: auto;
+}
+
+.icon:hover{
+    transform: scale(1.25);
+    transition: transform 0.7s ease;
+}
+
+footer {
+    background-image: url('Images/abstract-blur-empty-green-gradient-studio-well-use-as-background-website-template-frame-business-report.jpg');
+    background-size: cover;
+}
+
+
+
+
+
+@media print {
+    h1, p, ul, ol, footer {
+        color: black;
+        font-family: 'Lexend', serif;
+    }
+    blockquote{
+        @font-face {
+            font-family: serif;
+            src: url(sansation_light.woff);
+        }
+    }
+    body {
+        margin: 1in;
+    }
+}
+
+
+@media screen and (min-width: 760px){
+    h1{
+        font-size: 2rem;
+        color: rgb(169, 55, 55);
+    }
+    p{
+        text-indent: 0;
+        margin: 10px;
+    }
+    main{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4";
+    }
+
+    .item1{
+        grid-area: item1;
+        justify-self: center;
+        padding-left: 10px;
+    }
+
+    .item2{
+        grid-area: item2;
+        padding-left: 10px;
+    }
+
+    .item3{
+        grid-area: item3;
+        padding-left: 10px;
+    }
+
+    .item4{
+        justify-self: left;
+        padding-left: 25px;
+    }
+
+    .item5 {
+        grid-area: item5;
+        justify-self: center;
+        padding-left: 10px;
+      }
+       
+
+    .about,
+    .interests,
+    .education,
+    .resume{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lightblue;
+    }
+
+    .abroad,
+    .itjob,
+    .intern,
+    .overall{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: lightblue
+        }
+
+    .abroadr,
+    .itjobr,
+    .internr,
+    .overallr{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: lightblue;
+    } 
+
+    .homeMain{
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border:1px solid;
+        border-radius: 5px;
+        background-color: lightblue;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid black;
+      }
+      
+      caption {
+        caption-side: top;
+        font-weight: bold;
+      }
+      
+      thead {
+        background-color: darkgray;
+      }
+      
+      tfoot {
+        background-color: white;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: lavender;
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: teal;
+      }
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid black;
+      }
+
+
+
+      .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: lightblue;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group textarea {
+        height: 100px;
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: blue;
+      }
+      .form-group button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: blue;
+      }
+
+      
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 759px){
+
+    .grid{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: auto;
+    }
+
+    .item1{
+        grid-area: item1;
+        padding-top: 20px;
+        padding-left: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    .item2{
+        grid-area: item2;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .item3{
+        grid-area: item3;
+        justify-self: left;
+        padding-left: 10px;
+    }
+
+    .item4{
+        justify-self: left;
+        padding-left: 215px;
+    }
+
+
+    .burger{
+        display:none;
+    }
+    .buger div{
+        width: 25px;
+        height: 5px;
+        margin: 5px;
+        border-radius: 25%;
+    }
+
+    th, td {
+        font-size: 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #000;
+      }
+      
+      caption {
+        caption-side: top;
+        font-weight: bold;
+      }
+      
+      thead {
+        background-color: black;
+      }
+      
+      tfoot {
+        background-color: white;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: teal;
+      }
+      
+      tbody tr:nth-child(odd) {
+        background-color: lavender;
+      }
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid #000;
+      }
+
+
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: lavender;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+      }
+      .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group textarea {
+        height: 100px;
+      }
+      .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: blue;
+      }
+      .form-group button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #0056b3;
+      }
+
+}
