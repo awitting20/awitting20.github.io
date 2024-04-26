@@ -6,7 +6,7 @@
     
     .active{
         background-color: rgb(106, 191, 131);
-        color: black
+        color: black;
     }
     
     
@@ -30,7 +30,7 @@
     
     nav ul li a{
         display: block;
-        font-family: Arial;
+        font-family: 'Lexend';
         font-weight: bold;
         color: black;
         font-size: 20px;
@@ -91,20 +91,29 @@
         border-radius: 4px;
     }
     
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover {
         display:block;
     }
 
-    .dropdown-menu{
+    .dropdown-menu .dropdown-menu{
         display: none;
     }
     
     
     
-    
     @media only screen and (max-width: 760px){
     
+    nav ul li a{
+        display: block;
+        font-family: 'Lexend';
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        padding: 0px 10px 10px 15px;
+        text-decoration: none;
+        } 
     
+
     .hamburger{
         display: inline-block;
         padding-left: 20px;
@@ -173,7 +182,7 @@
     }
         
     .dropdown:hover .dropdown-menu{
-        display:block;
+        display: block;
     }
         
     }
