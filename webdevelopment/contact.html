@@ -38,6 +38,30 @@
         </ul>
     </nav>
 
+    <div id="CounterVisitor">
+    </div>
+    
+    <script>
+    var n = localStorage.getItem('on_load_counter');
+    
+    if (n === null) {
+      n = 0;
+    }
+    n++;
+    
+    localStorage.setItem("on_load_counter", n);
+    
+    nums = n.toString().split('').map(Number);
+    document.getElementById('CounterVisitor').innerHTML = '';
+    for (var i of nums) {
+      document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+    }
+    
+    </script>
+    
+</head>
+
+<body>
     <h1>Contact Me</h1>
     <div class="form-container">
         <form id="contact-form" method="post">
@@ -65,7 +89,7 @@
 <main>
 
 </main>
-
+</body>
 
 <table>
     <caption>References</caption>
@@ -104,6 +128,8 @@
     <div>
         <span>&copy; Aaron Witting's Website</span>
     </div>
+        <!--Photo References: https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2FMUdoIT&psig=AOvVaw2I-WCNm9QwazQhs1xbTt6_&ust=1714251155034000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjb-qrh4IUDFQAAAAAdAAAAABAE 
+    https://www.google.com/url?sa=i&url=https%3A%2F%2Fabc17news.com%2Fnews%2Feducation%2Funiversity-of-missouri%2F2022%2F05%2F18%2Fmu-replacing-15-pin-oak-trees-around-the-francis-quad%2F&psig=AOvVaw2e9Bjj5K3Aa8zTgkqqP2HM&ust=1714251248681000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODj7-Dh4IUDFQAAAAAdAAAAABAE-->
 </footer>
 </body>
 
